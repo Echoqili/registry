@@ -155,5 +155,26 @@
         }
       }
     ]
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "io.github.echoqili/ssh-licco",
+    "description": "SSH Model Context Protocol Server - Connect to SSH servers and execute commands via AI assistants.",
+    "repository": {
+      "url": "https://github.com/Echoqili/ssh-licco.git",
+      "source": "github"
+    },
+    "version": "0.1.0",
+    "packages": [
+      {
+        "registryType": "pypi",
+        "identifier": "ssh-licco",
+        "version": "0.1.0",
+        "runtimeHint": "python",
+        "transport": {
+          "type": "stdio"
+        }
+      }
+    ]
   }
 ]
