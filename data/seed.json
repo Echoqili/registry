@@ -164,16 +164,66 @@
       "url": "https://github.com/Echoqili/ssh-licco.git",
       "source": "github"
     },
-    "version": "0.1.0",
+    "version": "0.2.1",
     "packages": [
       {
         "registryType": "pypi",
         "identifier": "ssh-licco",
-        "version": "0.1.0",
+        "version": "0.2.1",
         "runtimeHint": "python",
         "transport": {
           "type": "stdio"
-        }
+        },
+        "environmentVariables": [
+          {
+            "description": "SSH server hostname or IP address",
+            "isRequired": false,
+            "isSecret": false,
+            "name": "SSH_HOST"
+          },
+          {
+            "description": "SSH server port (default: 22)",
+            "isRequired": false,
+            "isSecret": false,
+            "name": "SSH_PORT"
+          },
+          {
+            "description": "SSH username",
+            "isRequired": false,
+            "isSecret": false,
+            "name": "SSH_USER"
+          },
+          {
+            "description": "SSH password",
+            "isRequired": false,
+            "isSecret": true,
+            "name": "SSH_PASSWORD"
+          },
+          {
+            "description": "SSH client type: paramiko or asyncssh (default: paramiko)",
+            "isRequired": false,
+            "isSecret": false,
+            "name": "SSH_CLIENT_TYPE"
+          },
+          {
+            "description": "Connection timeout in seconds (default: 30)",
+            "isRequired": false,
+            "isSecret": false,
+            "name": "SSH_TIMEOUT"
+          },
+          {
+            "description": "Keep-alive interval in seconds (default: 30)",
+            "isRequired": false,
+            "isSecret": false,
+            "name": "SSH_KEEPALIVE_INTERVAL"
+          },
+          {
+            "description": "Session timeout in seconds (default: 7200)",
+            "isRequired": false,
+            "isSecret": false,
+            "name": "SSH_SESSION_TIMEOUT"
+          }
+        ]
       }
     ]
   }
